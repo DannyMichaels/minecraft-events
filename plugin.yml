@@ -1,4 +1,5 @@
-main: com.daniel.minecraftevents
+main: com.daniel.minecraftevents.Main
 name: MinecraftEvents
 description: testing minecraft events
 version: 1.0
+author: Daniel
