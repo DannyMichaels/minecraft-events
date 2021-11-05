@@ -29,8 +29,11 @@ public class Main extends JavaPlugin implements Listener {
 	@EventHandler
 	public void onMove(PlayerMoveEvent event) { // triggered when player moves
 		Player player = event.getPlayer();
-		event.setCancelled(true); // cancels event, no player can move
-		player.sendMessage("Movement blocked!");
+
+		if (!player.hasPermission("minecraftevents.allowmove")) {
+			event.setCancelled(true); // cancels event, no player can move
+			player.sendMessage("Movement blocked!, you don't have perms to move");
+		}
 	}
 
 	@EventHandler
