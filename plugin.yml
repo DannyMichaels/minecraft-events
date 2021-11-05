@@ -3,3 +3,6 @@ name: MinecraftEvents
 description: testing minecraft events
 version: 1.0
 author: Daniel
+commands:
+  config:
+  edit_config:
